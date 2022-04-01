@@ -1,0 +1,21 @@
+{
+  "name": "beginner",
+  "version": "1.0.0",
+  "description": "lesson for mern stack technologies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "node backend/server.js"
+  },
+  "author": "Peter Karanja",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
