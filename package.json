@@ -1,31 +1,37 @@
 {
   "name": "beginner",
   "version": "1.0.0",
-  "description": "lesson for mern stack technologies",
+  "description": "goal setter MERN app",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkaranja60/Beginner.git"
   },
   "author": "Peter Karanja",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkaranja60/Beginner/issues"
+  },
+  "homepage": "https://github.com/pkaranja60/Beginner#readme",
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.5",
-    "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.9",
-    "webpack-dev-middleware": "^5.3.3"
+    "mongoose": "^6.4.0"
   },
   "devDependencies": {
-    "concurrently": "^7.2.1",
-    "nodemon": "^2.0.15"
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.16"
   }
 }
