@@ -31,8 +31,8 @@ const setGoals = asyncHandler(async (req, res) => {
 // @desc Update goals
 // @route PUT /api/goals
 // @access private
-const updatetGoals = asyncHandler(async (req, res) => {
-  // const goal = await Goal.findById(req.params.id);
+const updateGoals = asyncHandler(async (req, res) => {
+  const goal = await Goal.findById(req.params.id);
 
   if (!goal) {
     res.status(404);
@@ -92,6 +92,6 @@ const deleteGoals = asyncHandler(async (req, res) => {
 module.exports = {
   getGoals,
   setGoals,
-  updatetGoals,
+  updateGoals,
   deleteGoals,
 };
