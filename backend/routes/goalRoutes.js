@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const goalController = require("../controllers/goalControllers");
+
+const goalController = require("../controllers/goalController");
 
 const { protect } = require("../middleware/authMiddleware");
 
@@ -12,5 +13,6 @@ router
   .route("/:id")
   .delete(protect, goalController.deleteGoals)
   .put(protect, goalController.updateGoals);
+
 
 module.exports = router;
